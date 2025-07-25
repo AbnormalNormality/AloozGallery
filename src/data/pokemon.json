@@ -1,7 +1,6 @@
 {
   "clauncher": {
     "id": "clauncher",
-    "n": 0,
     "name": "Clauncher",
     "types": ["bug", "fire"],
     "abilities": ["megaLauncher", "rapidFire", "stormDrain"],
@@ -13,7 +12,6 @@
   },
   "clawitzer": {
     "id": "clawitzer",
-    "n": 1,
     "name": "Clawitzer",
     "types": ["bug", "fire"],
     "abilities": ["megaLauncher", "rapidFire", "stormDrain"],
@@ -26,8 +24,7 @@
   },
   "combee": {
     "id": "combee",
-    "n": 2,
-    "name": "Clawitzer",
+    "name": "Combee",
     "types": ["fairy", "poison"],
     "abilities": ["levitate", "merciless", "berserk"],
     "picture": "assets/9Combee.webp",
@@ -39,7 +36,6 @@
   },
   "vespiquen": {
     "id": "vespiquen",
-    "n": 3,
     "name": "Vespiquen",
     "types": ["fairy", "poison"],
     "abilities": ["levitate", "merciless", "berserk"],
@@ -53,7 +49,6 @@
   },
   "nidoranf": {
     "id": "nidoranf",
-    "n": 4,
     "name": "NidoranF",
     "types": ["fairy", "poison"],
     "abilities": ["barbed", "pixilate", "battleArmour"],
@@ -65,7 +60,6 @@
   },
   "nidorina": {
     "id": "nidorina",
-    "n": 5,
     "name": "Nidorina",
     "types": ["fairy", "poison"],
     "abilities": ["barbed", "pixilate", "battleArmour"],
@@ -77,7 +71,6 @@
   },
   "nidoqueen": {
     "id": "nidoqueen",
-    "n": 6,
     "name": "Nidoqueen",
     "types": ["fairy", "ground"],
     "abilities": ["poisonHeal", "pixilate", "battleArmour"],
@@ -90,7 +83,6 @@
   },
   "nidoranm": {
     "id": "nidoranm",
-    "n": 7,
     "name": "NidoranM",
     "types": ["poison", "electric"],
     "abilities": ["merciless", "galvanise", "barbed"],
@@ -102,7 +94,6 @@
   },
   "nidorino": {
     "id": "nidorino",
-    "n": 8,
     "name": "Nidorino",
     "types": ["poison", "electric"],
     "abilities": ["merciless", "galvanise", "barbed"],
@@ -114,7 +105,6 @@
   },
   "nidoking": {
     "id": "nidoking",
-    "n": 9,
     "name": "Nidoking",
     "types": ["electric", "ground"],
     "abilities": ["poisonHeal", "toxicBoost", "quickFeet"],
@@ -124,5 +114,382 @@
       "Nidoking's power output triples when poisoned and it becomes even faster and more aggressive. It has been witnessed intentionally poisoning itself in the wild to win territorial battles against other Nidoking."
     ],
     "title": "Thunder Crash"
+  },
+  "ponyta": {
+    "id": "ponyta",
+    "name": "Ponyta",
+    "types": ["ghost", "fairy"],
+    "abilities": ["flashFire", "flareBoost"],
+    "picture": "assets/15Ponyta.webp",
+    "entries": [
+      "This mystical Pokémon gallops silently through moonlight, its body trailing pale embers. Children who follow its glow often wake up miles from home, unable to explain how they got there."
+    ],
+    "title": "Wisp Colt"
+  },
+  "rapidash": {
+    "id": "rapidash",
+    "name": "Rapidash",
+    "types": ["ghost", "fairy"],
+    "abilities": ["flashFire", "flareBoost"],
+    "picture": "assets/16Rapidash.webp",
+    "entries": [
+      "Remix Rapidash's body pulses with a strange inner fire. Though it no longer bears real flame, its heatless blaze scorches only the soul, not the skin.",
+      "With every step, this Pokémon burns away the veil between dimensions. Its hooves leave behind trails of spectral ash that shimmer briefly before vanishing into the air.",
+      "It has been said in legends that this Pokemon can escort people and other Pokemon to the afterlife."
+    ],
+    "title": "Phantom Blaze"
+  },
+  "abra": {
+    "id": "abra",
+    "name": "Abra",
+    "types": ["ice", "fairy"],
+    "abilities": ["refrigerate", "pixilate", "wimpOut"],
+    "picture": "assets/11Abra.webp",
+    "entries": [
+      "Trainers who bond with it claim to hear faint jingles—like an ice cream truck approaching—from nowhere.",
+      "Scientists have discovered that Abra's sense of smell is specially adapted to detect the smell of ice cream from a massive distance."
+    ],
+    "title": "Vanilla Sprinkle"
+  },
+  "kadabra": {
+    "id": "kadabra",
+    "name": "Kadabra",
+    "types": ["ice", "fairy"],
+    "abilities": ["refrigerate", "pixilate", "steelworker"],
+    "picture": "assets/12Kadabra.webp",
+    "entries": [
+      "Kadabra’s tail is coated in a thick syrup-like substance that smells strongly of chocolate. Its spoon glows when it prepares to launch bursts of energy.",
+      "Kadabra's waffle cone armor is surprisingly durable, but is easily melted by fire."
+    ],
+    "title": "Chocolate Swirl"
+  },
+  "alakazam": {
+    "id": "alakazam",
+    "name": "Alakazam",
+    "types": ["ice", "steel"],
+    "abilities": ["refrigerate", "steelworker", "weakArmour"],
+    "picture": "assets/13Alakazam.webp",
+    "entries": [
+      "It screams at the top of its lungs when it gets excited. What excites them? Ice cream, of course!",
+      "Kadabra especially skilled at wielding spoons are said to evolve into Alakazam when they learn to fuse the metal from the spoon into armor."
+    ],
+    "title": "Mint Chip"
+  },
+  "mega-alakazam": {
+    "id": "mega-alakazam",
+    "name": "Mega Alakazam",
+    "types": ["fairy", "steel"],
+    "abilities": ["refrigerate", "steelworker", "levitate"],
+    "picture": "assets/14MegaAlakazam.webp",
+    "entries": [
+      "Upon Mega Evolution, it absorbs the elemental energy of its previous forms. The strawberry gem on its head glows when it's about to attack.",
+      "Mega Alakazam's beard is made of a magical ice cream that never runs out. Mega Alakazam can live in a state of true bliss knowing its constant craving for ice cream will always be satiated- and their body metabolizes it so quickly they never gain weight!"
+    ],
+    "title": "Neapolitan Bliss"
+  },
+  "vanillite": {
+    "id": "vanillite",
+    "name": "Vanillite",
+    "types": ["ice", "poison"],
+    "abilities": ["levitate", "waterAbsorb", "weakArmour"],
+    "picture": "assets/17Vanillite.webp",
+    "entries": [
+      "Though it resembles an innocent frozen treat, Remix Vanillite's tears are corrosive. It's often found alone, dripping in silence beneath overcast skies. Stay far away."
+    ],
+    "title": "Sad Cream"
+  },
+  "vanillish": {
+    "id": "vanillish",
+    "name": "Vanillish",
+    "types": ["ice", "poison"],
+    "abilities": ["levitate", "waterAbsorb", "weakArmour"],
+    "picture": "assets/18Vanillish.webp",
+    "entries": [
+      "Vanillish's constant stream of tears are said to be absorbed into its own body immediately, fueling itself in a perpetual state of sadness."
+    ],
+    "title": "Slush Rot"
+  },
+  "vanilluxe": {
+    "id": "vanilluxe",
+    "name": "Vanilluxe",
+    "types": ["ice", "poison"],
+    "abilities": ["levitate", "waterAbsorb", "weakArmour"],
+    "picture": "assets/19Vanilluxe.webp",
+    "entries": [
+      "This Vanilluxe is constantly in a state of misery due to how sick it has become. The sludge on its body smells foul and will infect anyone who touches it."
+    ],
+    "title": "Contagious Sundae"
+  },
+  "pyukumuku": {
+    "id": "pyukumuku",
+    "name": "Pyukumuku",
+    "types": ["steel"],
+    "abilities": ["waterAbsorb", "unaware"],
+    "picture": "assets/20Pyukumuku.webp",
+    "entries": [
+      "This bizarre form of Pyukumuku was discovered near a defunct facility once used to test aquatic technologies. Its body is lined with mechanical plating, and its strange inner appendage releases dense clouds of reactive foam.",
+      "Despite its menacing facial expression, this variant of Pyukumuku is relatively friendly and used in hot tubs, jacuzzis, and aquariums to create bubbles and filter water! Some speculate that Pyukumuku does not enjoy doing this, however.",
+      "Despite not normally evolving, this variant of Pyukumuku has potential to evolve into two vastly different Pokemon, one of which is helpful for research and the other is detrimental."
+    ],
+    "title": "Bubble Machine"
+  },
+  "qwilfish": {
+    "id": "qwilfish",
+    "name": "Qwilfish",
+    "types": ["steel", "poison"],
+    "abilities": ["liquidVeil", "barbed", "rapidFire"],
+    "picture": "assets/22Qwilfish.webp",
+    "entries": [
+      "This Qwilfish variant drifts through polluted industrial zones, its body caked in rust and toxic grime. Its spines can inject metal-eating venom into anything they pierce.",
+      "This Pokémon was said to have absorbed industrial waste into its biology. Now, its very presence causes surrounding machinery to seize up and corrode.",
+      "This dangerous Pokemon is said to have been utilized and placed strategically during wars of the past. Ones that were not used became rusted and corroded over time, resulting in the species we see now."
+    ],
+    "title": "Corroded Mine"
+  },
+  "corsola": {
+    "id": "corsola",
+    "name": "Corsola",
+    "types": ["water", "steel"],
+    "abilities": ["lightningRod", "electricSurge", "barbed"],
+    "picture": "assets/21Corsola.webp",
+    "entries": [
+      "The durable steel body of this Corsola is designed to purify water. The glowing rods on its limbs attract lightning, storing the charge to boost its power during storms.",
+      "This Pokemon is a valuable asset to environmentalists and researchers alike. It filters toxins from the sea, and its spikes emit an electrical field to ward off threats."
+    ],
+    "title": "Water Purifier"
+  },
+  "mareanie": {
+    "id": "mareanie",
+    "name": "Mareanie",
+    "types": ["poison", "electric"],
+    "abilities": ["merciless", "regenerator", "stormDrain"],
+    "picture": "assets/28Mareanie.webp",
+    "entries": [
+      "Mareanie in this form are drawn to electromagnetic seabeds where currents surge through mineral-rich waters. They store electrical energy in their gleaming golden spines, releasing sudden shocks into prey with surgical precision."
+    ],
+    "title": "Voltage Spine"
+  },
+  "toxipex": {
+    "id": "toxipex",
+    "name": "Toxipex",
+    "types": ["poison", "electric"],
+    "abilities": ["merciless", "regenerator", "stormDrain"],
+    "picture": "assets/29Toxipex.webp",
+    "entries": [
+      "This fearsome predator specifically targets Doozian Remix Corsola—piercing through its armor-like plating with concentrated bioelectric bursts. However, Remix Corsola has adapted counter-mechanisms and can often absorb said electricity depending.",
+      "Swimmers and tourists are warned of these Pokemon when visiting beaches as to not accidentally step on one. It is said that stepping on one feels like a thousand lightning strikes, and the lingering poison and paralysis are even more unpleasant and can last for hours."
+    ],
+    "title": "Brutal Current"
+  },
+  "unown": {
+    "id": "unown",
+    "name": "Unown",
+    "types": ["psychic", "ghost"],
+    "abilities": ["energyShield", "magicBounce", "psychicSurge"],
+    "picture": "assets/23Unown.webp",
+    "entries": [
+      "These Unown slipped into an Ultra Wormhole during a cosmic anomaly. What they saw shattered their former selves—now, a galaxy burns behind their eye, visible from the front and the back. They no longer form letters, but sigils of forgotten power.",
+      "Long term exposure to Ultra Space has awakened ancient knowledge within Unown. They resonate with forgotten relics like Remix Stantler and Sigilyph—and even draw the attention of Ultra Beasts. Some say they are the key to Stakataka's rebirth. Some researchers are drawing comparisons of it to Cosmog, but the research is currently inconclusive.",
+      "It's said that if a human stares too long into this Unown's cosmic eye, they begin to see things not meant for this world or things long forgotten—visions of Ultra Space, ancient glyphs, and unseen, evil spirits. Some describe it as a divine revelation; others are left hollow and a shell of their former selves. Entire ruins have been sealed off to prevent further contact."
+    ],
+    "title": "Dimensional Rift"
+  },
+  "stantler": {
+    "id": "stantler",
+    "name": "Stantler",
+    "types": ["ghost", "rock"],
+    "abilities": ["energyShield", "magicBounce"],
+    "picture": "assets/24Stantler.webp",
+    "entries": [
+      "Those who make direct eye contact with its horns or other eyes are said to forget their purpose. Ancient travelers painted symbols resembling it to ward off unseen spirits.",
+      "Many people own glass talismans, amulets and jewellery based off of this Stantler's mysterious yet beautiful appearance. It is believed they ward off spirits.",
+      "It is said that this variant of Stantler is always watching, no matter what angle you view it from. Whether or not it truly protects is doubted by some, but it has extreme cultural significance in certain regions.",
+      "This variant of Stantler is said to stand guard for ancient societies, and is a natural rival to Sigilyph. It is said that battles between Sigilyph & Stantler were a sight to behold."
+    ],
+    "title": "Evil Eye"
+  },
+  "tangela": {
+    "id": "tangela",
+    "name": "Tangela",
+    "types": ["bug", "psychic"],
+    "abilities": ["analytic", "badDreams", "regenerator"],
+    "picture": "assets/26Tangela.webp",
+    "entries": [
+      "Tangela's body is a mass of parasitic brain-worms that never stop writhing and squirming. It wraps them around sleeping prey, siphoning dreams until only nightmares remain.",
+      "Each tendril operates like a rogue neuron. When Tangela feeds, its host experiences vivid hallucinations—often of writhing worms burrowing into their thoughts. Once latched onto a creature's mind, its “hair” worms dig into the psyche, feasting on memories and rewriting them with its own. Victims often wake up screaming with no idea why."
+    ],
+    "title": "Mindworm"
+  },
+  "tangrowth": {
+    "id": "tangrowth",
+    "name": "Tangrowth",
+    "types": ["fairy", "dragon"],
+    "abilities": ["poisonHeal", "merciless", "multiscale"],
+    "picture": "assets/27Tangrowth.webp",
+    "entries": [
+      "Travelers speak of a woman cloaked in a mass of snakes, eyes glowing with divine punishment. Even the bravest Pokémon avert their gaze, lest their soul be “tangled” and lost forever. Her eyes shimmer with a hypnotic glow that paralyzes anything foolish enough to meet her gaze. Forests she inhabits are eerily silent—every living creature knows not to look up.",
+      "Long ago, a jealous monarch cast her into the wilderness, where her sorrow warped into fury. Now she rules the deep woods with a gaze that stills the body and shatters the will. It is said she doesn't need to chase her prey. One look, and they fall—mouth open, limbs stiff—left to rot in the roots as her serpentine hair and limbs slowly coil around them."
+    ],
+    "title": "Cursed Serpent"
+  },
+  "farfetchd": {
+    "id": "farfetchd",
+    "name": "Farfetch'd",
+    "types": ["grass", "fire"],
+    "abilities": ["ruthless", "flashFire", "unburden"],
+    "picture": "assets/25Farfetch'd.webp",
+    "entries": [
+      "A farfetch'd that narrowly escaped being served at a restaurant, they carry themselves with a chip on their shoulder. This Pokemon relies on its quick reflexes and strong will to get away from the other Pokemon constantly being attracted by its delicious scent and appearance.",
+      "This Farfetch'd variant smells delicious- like crispy roast duck, and faintly of smoked herbs. It proudly waves its charred leek like a baton daring predators and chefs alike to come closer. Whether or not this Pokemon continues to survive out of sheer spite, or survival ability is up for debate."
+    ],
+    "title": ""
+  },
+  "skorupi": {
+    "id": "skorupi",
+    "name": "Skorupi",
+    "types": ["bug", "ground"],
+    "abilities": ["sandRush", "poisonHeal", "toughClaws"],
+    "picture": "assets/32Skorupi.webp",
+    "entries": [""],
+    "title": ""
+  },
+  "drapion": {
+    "id": "drapion",
+    "name": "Drapion",
+    "types": ["bug", "ground"],
+    "abilities": ["sandRush", "poisonHeal", "toughClaws"],
+    "picture": "assets/33Drapion.webp",
+    "entries": [""],
+    "title": "Sand Demon"
+  },
+  "whismur": {
+    "id": "whismur",
+    "name": "Whismur",
+    "types": ["electric", "dragon"],
+    "abilities": ["galvanise", "amplifier", "multiscale"],
+    "picture": "assets/34Whismur.webp",
+    "entries": [
+      "A failed biotech experiment designed to absorb ambient noise and convert it into power. It now releases bursts of EM interference when startled.",
+      "Whismur's internal processors are too underdeveloped to contain its energy. The static discharge from its cries can cause technology nearby to malfunction."
+    ],
+    "title": "Plasma Cell"
+  },
+  "loudred": {
+    "id": "loudred",
+    "name": "Loudred",
+    "types": ["electric", "dragon"],
+    "abilities": ["galvanise", "amplifier", "multiscale"],
+    "picture": "assets/35Loudred.webp",
+    "entries": [
+      "Loudred absorbs sound and electricity and converts it using its specialized cells. It's not certain if it resulted from experimentation by Silph. Co, or is naturally this way.",
+      "When Loudred becomes excited, it becomes a hazard to public safety since it can cause Pokemon Centers within several miles to have power outages."
+    ],
+    "title": "Overload"
+  },
+  "exploud": {
+    "id": "exploud",
+    "name": "Exploud",
+    "types": ["electric", "dragon"],
+    "abilities": ["galvanise", "amplifier", "multiscale"],
+    "picture": "assets/36Exploud.webp",
+    "entries": [
+      "This Pokemon's mere presence is a danger to the human ear, and any technology within a 10 mile radius is at risk of being damaged just from its breath alone.",
+      "Many popular monster movies have been made where a Dynamaxed Remix Exploud terrorizes major cities like Castelia and Saffron city."
+    ],
+    "title": "Cataclysm"
+  },
+  "aerodactyl": {
+    "id": "aerodactyl",
+    "name": "Aerodactyl",
+    "types": ["rock", "poison"],
+    "abilities": ["levitate", "strongJaw"],
+    "picture": "assets/41Aerodactyl.webp",
+    "entries": [
+      "This Aerodactyl was preserved not in stone, but in ancient tar pits. It oozes toxic sludge from its wings and snaps at prey with jaws that never decayed, even after eons underground."
+    ],
+    "title": ""
+  },
+  "mega-aerodactyl": {
+    "id": "mega-aerodactyl",
+    "name": "Mega Aerodactyl",
+    "types": ["rock", "fire"],
+    "abilities": ["levitate", "headstrong"],
+    "picture": "assets/42MegaAerodactyl.webp",
+    "entries": [
+      "Upon Mega Evolution, Aerodactyl is consumed by the wrath of extinction. Once preserved in tar, now reborn in fire- it incinerates anything resembling the forces that ended its species."
+    ],
+    "title": ""
+  },
+  "omanyte": {
+    "id": "omanyte",
+    "name": "Omanyte",
+    "types": ["grass", "steel"],
+    "abilities": ["stormySeas", "magicBounce", "superLuck"],
+    "picture": "assets/39Omanyte.webp",
+    "entries": [
+      "It is unknown whether or not this Pokemon's gemstones are organic and grow due to its diet or some mysterious power, or are picked out by Omastar itself. What is known, however, is that these are very rare creatures and often thought to be bringers of good luck. The more treasure it collects, the more sluggish its movements become. Its greed and desire to gather more gemstones mean its movement is constantly limited.",
+      "This semi-aquatic Pokemon crawls along the seafloor or jungle floor using its vine-like tendrils. The gems on its shell glint even in the pitch darkness of the deep sea or dense jungle, thought to attract both predators and treasure hunters- even pirates! This Pokemon's striking appearance makes it a popular choice amongst collectors or pirates alike. However, if someone captures one against its own will, it is said to summon an intense rainstorm capable of swamping any jungle adventurer, or sinking any ship."
+    ],
+    "title": "Relic Shell"
+  },
+  "omastar": {
+    "id": "omastar",
+    "name": "Omastar",
+    "types": ["grass", "steel"],
+    "abilities": ["stormySeas", "magicBounce", "superLuck"],
+    "picture": "assets/40Omastar.webp",
+    "entries": [
+      "This Pokemon's Yellow shell is made up of a Gold & Platinum alloy, and adorned with various treasure: Silver coins, Crystals, Red Rubies, Blue Sapphires & Pearls. It is capable of breaking open gemstones to eat with ease with its powerful and immensely hard Diamond & Green Emerald jaws. It is often mistaken for a piece of royal treasure and has been stolen from museums more than once. ",
+      "Their Scarlet, X shaped eye can dilate to zoom in, while their Violet pupil dilates to zoom their vision out- allowing them to spot treasure from miles awaY. Its shell acts as a mighty Shield from any predators, and cannot be pierced even with the mightiest Sword. However, not everything is Black & White with these Pokemon, as they are now heavily endangered due to greedy treasure-hunters."
+    ],
+    "title": "Lost Treasure"
+  },
+  "kabuto": {
+    "id": "kabuto",
+    "name": "Kabuto",
+    "types": ["bug", "ghost"],
+    "abilities": ["sharpness", "weakArmour"],
+    "picture": "assets/37Kabuto.webp",
+    "entries": [
+      "When threatened, it curls up and plays dead, its eerie patterns glowing faintly in the dark. The eyes on its back function as defensive mechanisms, scaring predators in the dark into thinking it is a much larger creature.",
+      "It uses the faint glow of its many eyes to scavenge the bottom of the ocean. This Pokemon's diet consists of remains that float to the bottom of the sea, especially bones."
+    ],
+    "title": "Skele-Shell"
+  },
+  "kabutops": {
+    "id": "kabutops",
+    "name": "Kabutops",
+    "types": ["bug", "ghost"],
+    "abilities": ["sharpness", "weakArmour"],
+    "picture": "assets/38Kabutops.webp",
+    "entries": [
+      "People and Pokemon alike used to fear Kabutops and painted images of its ominous glowing eyes and blades. Legends say its fossil holds a lingering will, and when unearthed, the spirit within reawakens to enact vengeance on those who dared to disturb its eternal rest.",
+      "This Pokemon's blades are able to suck the life force from those it cuts.  The wings on this Pokemon's back are no longer functional, but work as balancing appendages for it while it runs and swims."
+    ],
+    "title": "Bone-Blade"
+  },
+  "seel": {
+    "id": "seel",
+    "name": "Seel",
+    "types": ["water", "grass"],
+    "abilities": ["thickFat", "sapSipper", "swiftSwim"],
+    "picture": "assets/30Seel.webp",
+    "entries": [
+      "This regional Seel often plays the role of attendant in groups of its kind, using its leafy bow-tie and algae moustache to express itself. It mimics human manners and gestures, making it oddly charismatic. It is polite to even the rudest or most aggressive Pokemon and trainers.",
+      "Though young, this Pokémon takes its duties seriously—grooming its kelp accessories daily. Some researchers believe it imitates the noble Dewgong it serves, hoping to grow into royalty itself one day. Seel also serve Dewgong by consuming excess kelp on Dewgong's body to maintain their appearance."
+    ],
+    "title": "Kelp Courier"
+  },
+  "dewgong": {
+    "id": "dewgong",
+    "name": "Dewgong",
+    "types": ["water", "grass"],
+    "abilities": ["thickFat", "sapSipper", "swiftSwim"],
+    "picture": "assets/31Dewgong.webp",
+    "entries": [
+      "Respected as the sovereign of shallow coasts and seagrass beds, this Dewgong is adorned in living algae by their Seel servants. Calm and diplomatic, it gently maintains harmony among sea creatures. The more well-maintained a Dewgong's beard is, the higher status it becomes amongst its kingdom.",
+      "This kind-hearted Pokémon has adopted a strictly vegetarian diet, feasting only on seagrass presented by its loyal Seel attendants. As a compassionate ruler, it refuses to harm aquatic Pokémon. Its body is protected by thick, wrinkled skin and a layer of adaptive blubber suited to both cool and temperate seas."
+    ],
+    "title": "Sovereign Seaweed "
   }
 }

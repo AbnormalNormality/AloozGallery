@@ -5,26 +5,26 @@ function main() {
     displayGallery();
 }
 function displayGallery() {
-    const pokemon = getData("pokemon");
-    const sortedPokemon = Object.values(pokemon).sort((a, b) => a.n - b.n);
+    const order = getData("order");
     const slides = [];
-    for (const p of sortedPokemon) {
+    for (const p of order) {
+        const data = getData("pokemon")[p];
         const slide = document.createElement("div");
         slide.classList.add("slide");
         const nameWrapper = document.createElement("div");
         nameWrapper.classList.add("name-wrapper");
         const name = document.createElement("div");
         name.classList.add("name");
-        name.textContent = p.name;
+        name.textContent = data.name;
         const title = document.createElement("div");
         title.classList.add("title");
-        title.textContent = p.title;
+        title.textContent = data.title;
         const typeWrapper = document.createElement("div");
         typeWrapper.classList.add("type-wrapper");
         const typeWrapperInner = document.createElement("div");
         typeWrapperInner.classList.add("type-wrapper-inner");
         let i = 0;
-        for (const t of p.types) {
+        for (const t of data.types) {
             i++;
             const data = getData("types")[t];
             const type = document.createElement("div");
@@ -38,17 +38,24 @@ function displayGallery() {
         const picture = document.createElement("img");
         picture.classList.add("picture");
         picture.loading = "lazy";
-        picture.src = p.picture;
+        picture.src = data.picture;
         const entries = document.createElement("div");
         entries.classList.add("entries");
-        for (const e of p.entries) {
+        i = 0;
+        for (const t of data.types) {
+            i++;
+            const data = getData("types")[t];
+            entries.style.setProperty(`--type${i}-background`, data.background);
+            entries.style.setProperty(`--type${i}-foreground`, data.foreground);
+        }
+        for (const e of data.entries) {
             const entry = document.createElement("div");
             entry.textContent = e;
             entries.append(entry);
         }
         const abilities = document.createElement("div");
         abilities.classList.add("abilities");
-        for (const a of p.abilities) {
+        for (const a of data.abilities) {
             const data = getData("abilities")[a];
             const ability = document.createElement("div");
             ability.textContent = data.name;
@@ -61,6 +68,7 @@ function displayGallery() {
         slides.push(slide);
     }
     galleryDiv.append(...slides);
+    galleryDiv.scrollTop = galleryDiv.scrollHeight;
 }
 await updateStoredData();
 if (document.readyState === "complete")

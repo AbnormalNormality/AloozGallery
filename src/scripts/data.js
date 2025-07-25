@@ -9,6 +9,8 @@ export async function updateStoredData() {
     localStorage.setItem("types", JSON.stringify(types));
     const abilities = await loadJson("src/data/abilities.json");
     localStorage.setItem("abilities", JSON.stringify(abilities));
+    const order = await loadJson("src/data/order.json");
+    localStorage.setItem("order", JSON.stringify(order));
 }
 export function getData(key) {
     return JSON.parse(localStorage.getItem(key));
