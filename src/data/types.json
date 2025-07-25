@@ -1,0 +1,110 @@
+{
+  "bug": {
+    "name": "Bug",
+    "background": "#daea77",
+    "foreground": "#747e40",
+    "short": "B"
+  },
+  "fire": {
+    "name": "Fire",
+    "background": "#ff9900",
+    "foreground": "#783f04",
+    "short": "F"
+  },
+  "normal": {
+    "name": "Normal",
+    "background": "#cccccc",
+    "foreground": "#666666",
+    "short": "N"
+  },
+  "steel": {
+    "name": "Steel",
+    "background": "#999999",
+    "foreground": "#434343",
+    "short": "S"
+  },
+  "dark": {
+    "name": "Dark",
+    "background": "#745f5f",
+    "foreground": "#251e1e",
+    "short": "D"
+  },
+  "grass": {
+    "name": "Grass",
+    "background": "#93c47d",
+    "foreground": "#274e13",
+    "short": "G"
+  },
+  "fighting": {
+    "name": "Fighting",
+    "background": "#cc4125",
+    "foreground": "#5b0f00",
+    "short": "F"
+  },
+  "ice": {
+    "name": "Ice",
+    "background": "#cfe2f3",
+    "foreground": "#6fa8dc",
+    "short": "I"
+  },
+  "flying": {
+    "name": "Flying",
+    "background": "#c9daf8",
+    "foreground": "#6d9eeb",
+    "short": "F"
+  },
+  "water": {
+    "name": "Water",
+    "background": "#6fa8dc",
+    "foreground": "#073763",
+    "short": "W"
+  },
+  "electric": {
+    "name": "Electric",
+    "background": "#ffd966",
+    "foreground": "#7f6000",
+    "short": "E"
+  },
+  "rock": {
+    "name": "Rock",
+    "background": "#d5c38c",
+    "foreground": "#5e4a13",
+    "short": "R"
+  },
+  "ground": {
+    "name": "Ground",
+    "background": "#d9b547",
+    "foreground": "#5d4a13",
+    "short": "G"
+  },
+  "fairy": {
+    "name": "Fairy",
+    "background": "#ead1dc",
+    "foreground": "#c27ba0",
+    "short": "F"
+  },
+  "psychic": {
+    "name": "Psychic",
+    "background": "#c27ba0",
+    "foreground": "#741b47",
+    "short": "P"
+  },
+  "poison": {
+    "name": "Poison",
+    "background": "#a64d79",
+    "foreground": "#4c1130",
+    "short": "P"
+  },
+  "ghost": {
+    "name": "Ghost",
+    "background": "#8e7cc3",
+    "foreground": "#351c75",
+    "short": "G"
+  },
+  "dragon": {
+    "name": "Dragon",
+    "background": "#674ea7",
+    "foreground": "#20124d",
+    "short": "D"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "clauncher": {
+    "id": "clauncher",
+    "n": 0,
+    "name": "Clauncher",
+    "types": ["bug", "fire"],
+    "abilities": ["megaLauncher", "rapidFire", "stormDrain"],
+    "picture": "assets/1Clauncher.webp",
+    "entries": [
+      "Remix Clauncher puffs up its claws and fans its tail in a serpentine display meant to mimic dragons. If intimidation fails, it unleashes high-heat bursts from its blaster claw, occasionally igniting its own shell in the process as it's shell has not fully developed to handle the intense heat."
+    ],
+    "title": "Decoy Shell"
+  },
+  "clawitzer": {
+    "id": "clawitzer",
+    "n": 1,
+    "name": "Clawitzer",
+    "types": ["bug", "fire"],
+    "abilities": ["megaLauncher", "rapidFire", "stormDrain"],
+    "picture": "assets/2Clawitzer.webp",
+    "entries": [
+      "This variant of Clawitzer has evolved to mimic a threatening dragon's appearance to ward off larger predators. They can still manuever through water with ease.",
+      "Despite not being a Dragon-type, this crustacean has the firepower to back up its intimidating appearance! This firepower is useful for burning up prey too!"
+    ],
+    "title": "Inferno Shrimp"
+  },
+  "combee": {
+    "id": "combee",
+    "n": 2,
+    "name": "Clawitzer",
+    "types": ["fairy", "poison"],
+    "abilities": ["levitate", "merciless", "berserk"],
+    "picture": "assets/9Combee.webp",
+    "entries": [
+      "This variant of Combee gives off a faint floral scent that lures curious Pokémon close—only to inflict them with an unsavory neurotoxin. Each face takes turns smiling.",
+      "The various heads of this Combee vary in their mood. Some seem to enjoy inflicting pain, while others are in distress watching their fellow Combee take pleasure in this pain."
+    ],
+    "title": "Toxic Drone"
+  },
+  "vespiquen": {
+    "id": "vespiquen",
+    "n": 3,
+    "name": "Vespiquen",
+    "types": ["fairy", "poison"],
+    "abilities": ["levitate", "merciless", "berserk"],
+    "picture": "assets/10Vespiquen.webp",
+    "entries": [
+      "Remix Combee will supply Vespiquen with the proper diet to fuel her neurotoxin. If she is interrupted while feeding, she will lash out without mercy.",
+      "It brews its own potent neurotoxin within their body. When injected, this neurotoxin will cause intense infatuation, madness, and pain.",
+      "Vespiquen's remix form no longer needs to physically command her swarm—her pheromones alone are enough to keep her Combee in submission."
+    ],
+    "title": "Malevolent Queen"
+  }
+}
