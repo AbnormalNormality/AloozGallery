@@ -1,3 +1,6 @@
+@import url("compatibility.css");
+@import url("dark.css");
+
 :root {
   --font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -61,24 +64,6 @@ div {
   overflow-y: auto;
   grid-auto-rows: 33vmin;
   direction: ltr;
-}
-
-@media screen and (max-width: 1920px) {
-  #gallery {
-    --cols: 3;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  #gallery {
-    --cols: 2;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #gallery {
-    --cols: 1;
-  }
 }
 
 .slide {
@@ -247,14 +232,4 @@ div {
   gap: 10px;
   border: 2px solid var(--border-colour);
   grid-row: 3;
-}
-
-@media screen and (orientation: portrait) {
-  html {
-    font-size: 1vmax;
-  }
-
-  #gallery {
-    grid-auto-rows: 25vmax;
-  }
 }

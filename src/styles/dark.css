@@ -1,0 +1,12 @@
+@media (prefers-color-scheme: dark) {
+  :root:root {
+    --text-colour: #fff;
+
+    --background-colour: #222;
+    --gallery-colour: #444;
+    --slide-colour: #666;
+    --entries-colour: #444;
+    --ability-colour: #444;
+    --border-colour: #222;
+  }
+}
