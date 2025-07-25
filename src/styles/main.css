@@ -5,6 +5,7 @@
   --font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   --text-colour: #000;
+  --link-colour: #a0a;
 
   --background-colour: #ddd;
   --gallery-colour: #fff;
@@ -12,6 +13,7 @@
   --entries-colour: #fff8;
   --ability-colour: #fff8;
   --border-colour: #8888;
+  --header-colour: rgba(122, 122, 122, 0.5);
 }
 
 * {
@@ -67,6 +69,18 @@ div {
   padding: 2px;
 }
 
+#header {
+  position: fixed;
+  height: fit-content;
+  padding: 2.5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color: var(--header-colour);
+  border-radius: 0 0 10px 10px;
+}
+
 .slide {
   --gradient-split-distance: 50%;
 
@@ -75,7 +89,7 @@ div {
   border-radius: 10px;
   padding: 15px;
   display: grid;
-  grid-template-rows: 1fr 1fr 3fr;
+  grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   overflow: hidden;
@@ -98,9 +112,10 @@ div {
 }
 
 .name {
-  font-size: 2rem;
+  font-size: 1.75rem;
   width: fit-content;
   justify-self: center;
+  text-align: center;
 }
 
 .title {
@@ -176,9 +191,10 @@ div {
   width: fit-content;
   min-height: 0;
   padding: 5px;
-  grid-row: 2 / span 2;
+  grid-row: 2;
   grid-column: 1;
   justify-content: center;
+  padding: 10%;
 }
 
 .picture {
@@ -193,7 +209,7 @@ div {
   grid-row: 1;
   grid-column: 2;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, 1fr);
   height: fit-content;
   min-height: 0;
   height: 100%;
@@ -240,7 +256,15 @@ div {
   border-radius: 5px;
   gap: 10px;
   border: 2px solid var(--border-colour);
-  grid-row: 2 / span 2;
+  grid-row: 2;
   text-align: justify;
   font-size: 0.8rem;
+}
+
+a {
+  color: var(--link-colour);
+}
+
+a:visited {
+  color: var(--link-colour);
 }

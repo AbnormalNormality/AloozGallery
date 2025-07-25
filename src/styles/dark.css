@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: dark) {
   :root:root {
     --text-colour: #fff;
+    --link-colour: #faf;
 
     --background-colour: #222;
     --gallery-colour: #444;
