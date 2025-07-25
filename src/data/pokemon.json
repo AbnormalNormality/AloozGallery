@@ -50,5 +50,79 @@
       "Vespiquen's remix form no longer needs to physically command her swarm—her pheromones alone are enough to keep her Combee in submission."
     ],
     "title": "Malevolent Queen"
+  },
+  "nidoranf": {
+    "id": "nidoranf",
+    "n": 4,
+    "name": "NidoranF",
+    "types": ["fairy", "poison"],
+    "abilities": ["barbed", "pixilate", "battleArmour"],
+    "picture": "assets/3NidoranF.webp",
+    "entries": [
+      "Small but dangerous, this Nidoran variant uses its cutesy appearance to lure enemies close before striking with its poison tipped spikes or claws. The poison it secretes has a glittery sheen."
+    ],
+    "title": "Toxic Charm"
+  },
+  "nidorina": {
+    "id": "nidorina",
+    "n": 5,
+    "name": "Nidorina",
+    "types": ["fairy", "poison"],
+    "abilities": ["barbed", "pixilate", "battleArmour"],
+    "picture": "assets/4Nidorina.webp",
+    "entries": [
+      "This Pokémon forms close-knit groups with others of its kind, acting as a protector with toxic force. Its soft appearance hides sharp instincts and sharper spikes."
+    ],
+    "title": "Venom Guard"
+  },
+  "nidoqueen": {
+    "id": "nidoqueen",
+    "n": 6,
+    "name": "Nidoqueen",
+    "types": ["fairy", "ground"],
+    "abilities": ["poisonHeal", "pixilate", "battleArmour"],
+    "picture": "assets/5Nidoqueen.webp",
+    "entries": [
+      "Though no longer Poison-type, this Nidoqueen secretes healing toxins through her skin to heal herself. However, this poison is still deadly to those outside of her species.",
+      "Nidoqueen's nurturing presence is only matched by her brutal physical strength—especially when defending her territory. Her hard plated breast armor is especially durable."
+    ],
+    "title": "Matriarch"
+  },
+  "nidoranm": {
+    "id": "nidoranm",
+    "n": 7,
+    "name": "NidoranM",
+    "types": ["poison", "electric"],
+    "abilities": ["merciless", "galvanise", "barbed"],
+    "picture": "assets/6NidoranM.webp",
+    "entries": [
+      "Its tiny body stores enough voltage to knock out a full grown Kangaskhan, and it still has venom potent enough to put one on its back! Trainers often report strange tingling sensations after petting it—despite repeated warnings."
+    ],
+    "title": "Shock Spine"
+  },
+  "nidorino": {
+    "id": "nidorino",
+    "n": 8,
+    "name": "Nidorino",
+    "types": ["poison", "electric"],
+    "abilities": ["merciless", "galvanise", "barbed"],
+    "picture": "assets/7Nidorino.webp",
+    "entries": [
+      "This Pokemon wields both venom and electricity as defense mechanisms. They are highly aggressive and quick to anger. The angrier it gets, the brighter their vents glow."
+    ],
+    "title": "Horn Generator"
+  },
+  "nidoking": {
+    "id": "nidoking",
+    "n": 9,
+    "name": "Nidoking",
+    "types": ["electric", "ground"],
+    "abilities": ["poisonHeal", "toxicBoost", "quickFeet"],
+    "picture": "assets/8Nidoking.webp",
+    "entries": [
+      "Despite not being Poison type, venom still courses through its body and can be weaponized for offense, or used to heal itself and fuel its electric energy.",
+      "Nidoking's power output triples when poisoned and it becomes even faster and more aggressive. It has been witnessed intentionally poisoning itself in the wild to win territorial battles against other Nidoking."
+    ],
+    "title": "Thunder Crash"
   }
 }

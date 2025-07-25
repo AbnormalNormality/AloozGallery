@@ -1,5 +1,15 @@
 {
   "megaLauncher": { "name": "Mega Launcher" },
   "rapidFire": { "name": "Rapid Fire" },
-  "stormDrain": { "name": "Storm Drain" }
+  "stormDrain": { "name": "Storm Drain" },
+  "levitate": { "name": "Levitate" },
+  "merciless": { "name": "Merciless" },
+  "berserk": { "name": "Berserk" },
+  "poisonHeal": { "name": "Poison Heal" },
+  "barbed": { "name": "Barbed" },
+  "pixilate": { "name": "Pixilate" },
+  "toxicBoost": { "name": "Toxic Boost" },
+  "quickFeet": { "name": "Quick Feet" },
+  "galvanise": { "name": "Galvanise" },
+  "battleArmour": { "name": "Battle Armour" }
 }
