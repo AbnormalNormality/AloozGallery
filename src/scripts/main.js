@@ -31,6 +31,8 @@ function displayGallery() {
             type.textContent = data.short;
             typeWrapperInner.style.setProperty(`--type${i}-background`, data.background);
             typeWrapperInner.style.setProperty(`--type${i}-foreground`, data.foreground);
+            slide.style.setProperty(`--type${i}-background`, data.background);
+            slide.style.setProperty(`--type${i}-foreground`, data.foreground);
             typeWrapperInner.append(type);
         }
         const pictureWrapper = document.createElement("div");
@@ -41,13 +43,6 @@ function displayGallery() {
         picture.src = data.picture;
         const entries = document.createElement("div");
         entries.classList.add("entries");
-        i = 0;
-        for (const t of data.types) {
-            i++;
-            const data = getData("types")[t];
-            entries.style.setProperty(`--type${i}-background`, data.background);
-            entries.style.setProperty(`--type${i}-foreground`, data.foreground);
-        }
         for (const e of data.entries) {
             const entry = document.createElement("div");
             entry.textContent = e;

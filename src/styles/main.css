@@ -9,9 +9,9 @@
   --background-colour: #ddd;
   --gallery-colour: #fff;
   --slide-colour: #eee;
-  --entries-colour: #fff;
-  --ability-colour: #fff;
-  --border-colour: #ddd;
+  --entries-colour: #fff8;
+  --ability-colour: #fff8;
+  --border-colour: #8888;
 }
 
 * {
@@ -64,9 +64,12 @@ div {
   overflow-y: auto;
   grid-auto-rows: 33vmin;
   direction: ltr;
+  padding: 2px;
 }
 
 .slide {
+  --gradient-split-distance: 50%;
+
   background-color: var(--slide-colour);
   height: 100%;
   border-radius: 10px;
@@ -109,26 +112,33 @@ div {
 .type-wrapper {
   justify-content: center;
   position: relative;
-  background-color: var(--type1-background);
   flex-direction: row;
   align-items: center;
   grid-row: 1;
   grid-column: 2;
+  display: none;
 }
 
 .type-wrapper-inner {
-  --type2-background: var(--type1-background);
-  --type2-foreground: var(--type1-foreground);
-  --gradient-angle: 112.5deg;
   --gradient-split-distance: 2.5%;
-  --type1-percent: calc(50% - var(--gradient-split-distance));
-  --type2-percent: calc(50% + var(--gradient-split-distance));
 
   width: 50%;
   height: 75%;
   flex-direction: row;
   border-radius: 5px;
   overflow: hidden;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.type-wrapper-inner,
+.slide {
+  --type2-background: var(--type1-background);
+  --type2-foreground: var(--type1-foreground);
+  --gradient-angle: 112.5deg;
+  --type1-percent: calc(50% - var(--gradient-split-distance));
+  --type2-percent: calc(50% + var(--gradient-split-distance));
+
   background: linear-gradient(
         var(--gradient-angle),
         var(--type1-background) var(--type1-percent),
@@ -142,7 +152,6 @@ div {
       )
       border-box;
   border: 1px solid transparent;
-  justify-content: center;
   background-size: 110% 110%;
   background-position: center;
 }
@@ -181,7 +190,7 @@ div {
 .abilities {
   overflow: auto;
   gap: 5px;
-  grid-row: 2;
+  grid-row: 1;
   grid-column: 2;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -209,7 +218,7 @@ div {
   height: 100%;
   text-align: center;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .abilities > :first-child {
@@ -231,5 +240,7 @@ div {
   border-radius: 5px;
   gap: 10px;
   border: 2px solid var(--border-colour);
-  grid-row: 3;
+  grid-row: 2 / span 2;
+  text-align: justify;
+  font-size: 0.8rem;
 }
