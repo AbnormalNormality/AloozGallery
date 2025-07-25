@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: 2vmin;
+  font-size: 1vmax;
   height: 100%;
 }
 
@@ -36,24 +36,45 @@ div {
   flex-direction: column;
 }
 
+#gallery-border {
+  background-color: var(--gallery-colour);
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
 #gallery {
   width: 100%;
   height: 100%;
-  padding: 15px;
   gap: 15px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   background-color: var(--gallery-colour);
   border-radius: 15px;
+  overflow-y: auto;
+  grid-auto-rows: 25vmax;
+}
+
+@media screen and (max-width: 920px) {
+  #gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .slide {
   background-color: var(--slide-colour);
-  height: 50vmin;
+  height: 100%;
   border-radius: 10px;
   padding: 15px;
   display: grid;
-  grid-template-rows: 1fr 3fr 4fr;
+  grid-template-rows: 1fr 7fr;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   overflow: hidden;
@@ -80,8 +101,8 @@ div {
   --type2-foreground: var(--type1-foreground);
   --gradient-angle: 112.5deg;
 
-  width: 40%;
-  height: 50%;
+  width: 50%;
+  height: 75%;
   flex-direction: row;
   border-radius: 5px;
   overflow: hidden;
@@ -99,6 +120,8 @@ div {
       border-box;
   border: 1px solid transparent;
   justify-content: center;
+  background-size: 110% 110%;
+  background-position: center;
 }
 
 .type-wrapper-inner > * {
