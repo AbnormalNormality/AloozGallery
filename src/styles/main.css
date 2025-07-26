@@ -12,7 +12,7 @@
   --slide-colour: #eee;
   --entries-colour: #fff8;
   --ability-colour: #fff8;
-  --border-colour: #8888;
+  --border-colour: #8884;
   --header-colour: rgba(122, 122, 122, 0.33);
 }
 
@@ -73,17 +73,23 @@ div {
   position: fixed;
   height: fit-content;
   padding: 2.5px;
-  inset: auto 0 0 0;
+  inset: auto 10% 0 10%;
   align-items: center;
   background-color: var(--header-colour);
   border-radius: 10px 10px 0 0;
   font-size: 0.75rem;
+  transform-origin: center bottom;
+  transition: transform 0.15s ease;
+}
+
+#header:hover {
+  transform: scale(1.25);
 }
 
 .slide {
   /* --gradient-split-distance: 50%; */
-  /* --gradient-split-distance: 0.5px; */
-  --gradient-split-distance: 25%;
+  --gradient-split-distance: 0.5px;
+  /* --gradient-split-distance: 25%; */
 
   background-color: var(--slide-colour);
   height: 100%;
@@ -95,6 +101,7 @@ div {
   align-items: center;
   overflow: hidden;
   gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .slide > * {
@@ -113,10 +120,18 @@ div {
 }
 
 .name {
-  font-size: 1.75rem;
+  --ds-colour: var(--type1-foreground);
+  --ds-width: 1px;
+
+  font-size: 2rem;
   width: fit-content;
   justify-self: center;
   text-align: center;
+  color: var(--gallery-colour);
+  filter: drop-shadow(calc(var(--ds-width)) 0 0 var(--ds-colour))
+    drop-shadow(calc(-1 * var(--ds-width)) 0 0 var(--ds-colour))
+    drop-shadow(0 calc(var(--ds-width)) 0 var(--ds-colour))
+    drop-shadow(0 calc(-1 * var(--ds-width)) 0 var(--ds-colour));
 }
 
 .title {
@@ -154,17 +169,21 @@ div {
   --gradient-angle: 112.5deg;
   --type1-percent: calc(50% - var(--gradient-split-distance));
   --type2-percent: calc(50% + var(--gradient-split-distance));
+  --inside-1: var(--type1-background);
+  --inside-2: var(--type2-background);
+  --outside-1: var(--type1-foreground);
+  --outside-2: var(--type2-foreground);
 
   background: linear-gradient(
         var(--gradient-angle),
-        var(--type1-background) var(--type1-percent),
-        var(--type2-background) var(--type2-percent)
+        var(--inside-1) var(--type1-percent),
+        var(--inside-2) var(--type2-percent)
       )
       padding-box,
     linear-gradient(
         var(--gradient-angle),
-        var(--type1-foreground) var(--type1-percent),
-        var(--type2-foreground) var(--type2-percent)
+        var(--outside-1) var(--type1-percent),
+        var(--outside-2) var(--type2-percent)
       )
       border-box;
   border: 1px solid transparent;
@@ -199,9 +218,22 @@ div {
 }
 
 .picture {
+  --ds-colour: #fff;
+  --ds-width: 1px;
+  --ds2-colour: rgba(0, 0, 0, 0.2);
+  --ds2-width: 2px;
+
   max-width: 100%;
   max-height: 100%;
   min-height: 0;
+  filter: drop-shadow(calc(var(--ds-width)) 0 0 var(--ds-colour))
+    drop-shadow(calc(-1 * var(--ds-width)) 0 0 var(--ds-colour))
+    drop-shadow(0 calc(var(--ds-width)) 0 var(--ds-colour))
+    drop-shadow(0 calc(-1 * var(--ds-width)) 0 var(--ds-colour))
+    drop-shadow(calc(var(--ds2-width)) 0 0 var(--ds2-colour))
+    drop-shadow(calc(-1 * var(--ds2-width)) 0 0 var(--ds2-colour))
+    drop-shadow(0 calc(var(--ds2-width)) 0 var(--ds2-colour))
+    drop-shadow(0 calc(-1 * var(--ds2-width)) 0 var(--ds2-colour));
 }
 
 .abilities {
@@ -214,6 +246,12 @@ div {
   height: fit-content;
   min-height: 0;
   height: 100%;
+  overflow: visible;
+}
+
+.abilities > *,
+.entries {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .abilities:has(:nth-child(2)) {
@@ -231,11 +269,11 @@ div {
   background-color: var(--ability-colour);
   border-radius: 5px;
   padding: 2.5px;
-  border: 1px solid var(--border-colour);
+  border: 2px solid var(--border-colour);
   height: 100%;
   text-align: center;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .abilities > :first-child {
@@ -259,7 +297,7 @@ div {
   border: 2px solid var(--border-colour);
   grid-row: 2;
   text-align: justify;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 a {
