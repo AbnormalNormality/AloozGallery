@@ -81,7 +81,9 @@ div {
 }
 
 .slide {
-  --gradient-split-distance: 50%;
+  /* --gradient-split-distance: 50%; */
+  /* --gradient-split-distance: 0.5px; */
+  --gradient-split-distance: 25%;
 
   background-color: var(--slide-colour);
   height: 100%;

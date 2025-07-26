@@ -1,5 +1,11 @@
 @media screen and (max-width: 1920px) {
   #gallery {
+    --cols: 4 !important;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #gallery {
     --cols: 3 !important;
   }
 }
