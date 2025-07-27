@@ -6,7 +6,6 @@ function main() {
 }
 function displayGallery() {
     const order = getData("order");
-    const slides = [];
     for (const p of order) {
         const data = getData("pokemon")[p];
         const slide = document.createElement("div");
@@ -60,9 +59,17 @@ function displayGallery() {
         typeWrapper.append(typeWrapperInner);
         pictureWrapper.append(picture);
         slide.append(nameWrapper, typeWrapper, pictureWrapper, abilities, entries);
-        slides.push(slide);
+        galleryDiv.append(slide);
+        let globalWidth = null;
+        const abilitiesChildren = Array.from(abilities.children);
+        for (const el of abilitiesChildren) {
+            if (globalWidth === null || globalWidth > el.clientWidth)
+                globalWidth = el.clientWidth;
+        }
+        for (const el of abilitiesChildren) {
+            el.style.width = globalWidth + "px";
+        }
     }
-    galleryDiv.append(...slides);
     galleryDiv.scrollTop = galleryDiv.scrollHeight;
 }
 await updateStoredData();

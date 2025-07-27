@@ -248,6 +248,7 @@ div {
   min-height: 0;
   height: 100%;
   overflow: visible;
+  font-size: 1rem;
 }
 
 .abilities > *,
@@ -257,10 +258,12 @@ div {
 
 .abilities:has(:nth-child(2)) {
   grid-template-columns: repeat(2, 1fr);
+  font-size: 1rem;
 }
 
 .abilities:has(:nth-child(3)) {
   grid-template-columns: repeat(3, 1fr);
+  font-size: 0.8rem;
 }
 
 .abilities > * {
@@ -274,7 +277,7 @@ div {
   height: 100%;
   text-align: center;
   align-items: center;
-  font-size: 1rem;
+  overflow-wrap: anywhere;
 }
 
 .abilities > :first-child {
