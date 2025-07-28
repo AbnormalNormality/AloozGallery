@@ -139,6 +139,7 @@ div {
   font-size: 1rem;
   width: fit-content;
   align-self: center;
+  color: var(--type1-foreground);
 }
 
 .type-wrapper {
@@ -263,7 +264,7 @@ div {
 
 .abilities:has(:nth-child(3)) {
   grid-template-columns: repeat(3, 1fr);
-  font-size: 0.8rem;
+  font-size: 0.58rem;
 }
 
 .abilities > * {
@@ -300,7 +301,7 @@ div {
   gap: 10px;
   border: 2px solid var(--border-colour);
   grid-row: 2;
-  text-align: justify;
+  /* text-align: justify; */
   font-size: 1rem;
 }
 
