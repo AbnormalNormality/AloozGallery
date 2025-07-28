@@ -18,21 +18,13 @@ function displayGallery() {
         const title = document.createElement("div");
         title.classList.add("title");
         title.textContent = data.title;
-        const typeWrapper = document.createElement("div");
-        typeWrapper.classList.add("type-wrapper");
-        const typeWrapperInner = document.createElement("div");
-        typeWrapperInner.classList.add("type-wrapper-inner");
         let i = 0;
         for (const t of data.types) {
             i++;
             const data = getData("types")[t];
-            const type = document.createElement("div");
-            type.textContent = data.short;
-            typeWrapperInner.style.setProperty(`--type${i}-background`, data.background);
-            typeWrapperInner.style.setProperty(`--type${i}-foreground`, data.foreground);
             slide.style.setProperty(`--type${i}-background`, data.background);
             slide.style.setProperty(`--type${i}-foreground`, data.foreground);
-            typeWrapperInner.append(type);
+            slide.style.setProperty(`--type${i}-shadow`, data.foreground + "4d");
         }
         const pictureWrapper = document.createElement("div");
         pictureWrapper.classList.add("picture-wrapper");
@@ -56,9 +48,8 @@ function displayGallery() {
             abilities.append(ability);
         }
         nameWrapper.append(name, title);
-        typeWrapper.append(typeWrapperInner);
         pictureWrapper.append(picture);
-        slide.append(nameWrapper, typeWrapper, pictureWrapper, abilities, entries);
+        slide.append(nameWrapper, pictureWrapper, abilities, entries);
         galleryDiv.append(slide);
         let globalWidth = null;
         const abilitiesChildren = Array.from(abilities.children);
