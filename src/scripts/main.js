@@ -63,8 +63,22 @@ function displayGallery() {
     }
     galleryDiv.scrollTop = galleryDiv.scrollHeight;
 }
+async function startMessage() {
+    const commitUrl = `https://api.github.com/repos/abnormalnormality/aloozgallery/commits/main`;
+    try {
+        const response = await fetch(commitUrl);
+        const data = await response.json();
+        const message = data.commit.message;
+        const date = new Date(data.commit.author.date);
+        console.log(`${date.toLocaleString()}:`, message);
+    }
+    catch (error) {
+        console.error("Could not fetch latest commit message:", error);
+    }
+}
 await updateStoredData();
 if (document.readyState === "complete")
     main();
 else
     document.addEventListener("DOMContentLoaded", () => main());
+startMessage();
