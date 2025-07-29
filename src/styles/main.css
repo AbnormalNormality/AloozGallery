@@ -1,6 +1,3 @@
-@import url("compatibility.css");
-@import url("dark.css");
-
 :root {
   --font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -87,10 +84,6 @@ div {
 }
 
 .slide {
-  /* --gradient-split-distance: 50%; */
-  --gradient-split-distance: 0.5px;
-  /* --gradient-split-distance: 25%; */
-
   background-color: var(--slide-colour);
   height: 100%;
   border-radius: 10px;
@@ -99,19 +92,26 @@ div {
   grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  overflow: hidden;
   gap: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: visible;
 }
 
 .slide {
   --type2-background: var(--type1-background);
   --type2-foreground: var(--type1-foreground);
-  --gradient-angle: 112.5deg;
+
+  --gradient-split-distance: 0.5px;
+  --gradient-angle-base: 112.5deg;
+  --gradient-angle-reverse: calc(180deg - var(--gradient-angle-base));
+  --gradient-angle: var(---gradient-angle-base);
+
   --type1-percent: calc(50% - var(--gradient-split-distance));
   --type2-percent: calc(50% + var(--gradient-split-distance));
+
   --inside-1: var(--type1-background);
   --inside-2: var(--type2-background);
+
   --outside-1: var(--type1-foreground);
   --outside-2: var(--type2-foreground);
 
@@ -132,6 +132,11 @@ div {
   background-position: center;
 }
 
+.slide:nth-child(4n + 2),
+.slide:nth-child(4n + 3) {
+  --gradient-angle: calc(var(--gradient-angle) * -1);
+}
+
 .slide > * {
   width: 100%;
   height: 100%;
@@ -146,6 +151,7 @@ div {
   grid-column: 1;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .name {
@@ -156,7 +162,7 @@ div {
   width: fit-content;
   justify-self: center;
   text-align: center;
-  color: var(--gallery-colour);
+  color: #fff;
   filter: drop-shadow(calc(var(--ds-width)) 0 0 var(--ds-colour))
     drop-shadow(calc(-1 * var(--ds-width)) 0 0 var(--ds-colour))
     drop-shadow(0 calc(var(--ds-width)) 0 var(--ds-colour))
@@ -168,6 +174,7 @@ div {
   width: fit-content;
   align-self: center;
   color: var(--type1-foreground);
+  backdrop-filter: blur(1px);
 }
 
 .picture-wrapper {
@@ -180,7 +187,6 @@ div {
   grid-row: 2;
   grid-column: 1;
   justify-content: center;
-  /* padding: 10%; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -189,9 +195,9 @@ div {
 
 .picture {
   --ds-colour: #fff;
-  --ds-width: 1px;
+  --ds-width: 0.125vmin;
   --ds2-colour: var(--type1-shadow);
-  --ds2-width: 2px;
+  --ds2-width: 0.1875vmin;
 
   max-width: 100%;
   max-height: 100%;

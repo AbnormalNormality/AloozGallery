@@ -25,6 +25,7 @@ function displayGallery() {
             slide.style.setProperty(`--type${i}-background`, data.background);
             slide.style.setProperty(`--type${i}-foreground`, data.foreground);
             slide.style.setProperty(`--type${i}-shadow`, data.foreground + "4d");
+            slide.style.setProperty(`--type${i}-shadow-dark`, data.background + "4d");
         }
         const pictureWrapper = document.createElement("div");
         pictureWrapper.classList.add("picture-wrapper");
@@ -51,17 +52,43 @@ function displayGallery() {
         pictureWrapper.append(picture);
         slide.append(nameWrapper, pictureWrapper, abilities, entries);
         galleryDiv.append(slide);
-        let globalWidth = null;
         const abilitiesChildren = Array.from(abilities.children);
-        for (const el of abilitiesChildren) {
-            if (globalWidth === null || globalWidth > el.clientWidth)
-                globalWidth = el.clientWidth;
+        function resetAbilitiesWidth() {
+            for (const el of abilitiesChildren) {
+                el.style.width = "";
+            }
         }
-        for (const el of abilitiesChildren) {
-            el.style.width = globalWidth + "px";
+        function fixAbilitiesWidth() {
+            let globalWidth = null;
+            for (const el of abilitiesChildren) {
+                if (globalWidth === null || globalWidth > el.clientWidth)
+                    globalWidth = el.clientWidth;
+            }
+            for (const el of abilitiesChildren) {
+                el.style.width = globalWidth + "px";
+            }
         }
+        let resizeTimeout = null;
+        resetAbilitiesWidth();
+        fixAbilitiesWidth();
+        window.addEventListener("resize", () => {
+            if (resizeTimeout !== null) {
+                clearTimeout(resizeTimeout);
+            }
+            resizeTimeout = window.setTimeout(() => {
+                resetAbilitiesWidth();
+                fixAbilitiesWidth();
+                resizeTimeout = null;
+            }, 100);
+        });
     }
     galleryDiv.scrollTop = galleryDiv.scrollHeight;
+}
+function raf(callback, amount = 2) {
+    if (amount <= 0)
+        callback();
+    else
+        requestAnimationFrame(() => raf(callback, amount - 1));
 }
 async function startMessage() {
     const commitUrl = `https://api.github.com/repos/abnormalnormality/aloozgallery/commits/main`;
