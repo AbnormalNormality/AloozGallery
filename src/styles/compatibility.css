@@ -2,19 +2,11 @@
   --cols: 5;
 }
 
-.slide:nth-child(10n + 1),
-.slide:nth-child(10n + 5),
-.slide:nth-child(10n + 6),
-.slide:nth-child(10n + 10) {
+.slide:nth-child(odd) {
   --gradient-angle: var(--gradient-angle-base);
 }
 
-.slide:nth-child(10n + 2),
-.slide:nth-child(10n + 3),
-.slide:nth-child(10n + 4),
-.slide:nth-child(10n + 7),
-.slide:nth-child(10n + 8),
-.slide:nth-child(10n + 9) {
+.slide:nth-child(even) {
   --gradient-angle: var(--gradient-angle-reverse);
 }
 

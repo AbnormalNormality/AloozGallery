@@ -350,7 +350,7 @@
     "types": ["bug", "ground"],
     "abilities": ["sandRush", "poisonHeal", "toughClaws"],
     "picture": "assets/32Skorupi.webp",
-    "entries": [""],
+    "entries": [],
     "title": ""
   },
   "drapion": {
@@ -359,7 +359,7 @@
     "types": ["bug", "ground"],
     "abilities": ["sandRush", "poisonHeal", "toughClaws"],
     "picture": "assets/33Drapion.webp",
-    "entries": [""],
+    "entries": [],
     "title": "Sand Demon"
   },
   "whismur": {
@@ -514,5 +514,16 @@
       "Some believe the creature's true brain resides inside the claw, guided by the glowing eyes that never blink. Trainers report feeling watched even when the crab is asleep."
     ],
     "title": "Bloodbite"
+  },
+  "diglett": {
+    "id": "diglett",
+    "name": "Diglett",
+    "types": ["fairy", "dark"],
+    "abilities": [],
+    "picture": "assets/diglett.webp",
+    "entries": [
+      "This troubled Diglett struggles with emotional regulation.\nIt produces a strange medicinal powder that it can use to help other Pokemon. In small doses, this medicine heals all sorts of illness and calms anxious Pokemon. In large doses, it creates intense anxiety and violent mood swings, as well as a whooping cough that strains its voice, making it hoarse. However, producing this powder in excess causes it to breath it in constantly since it piles up around the ground near them. It wears its mask to try to prevent itself from getting \"high on its own supply\".\nIt also frequently injures itself by banging its head violently up and down and patches itself up with bandages. Pokemon also listens to loud music to help soothe its mind. Pokemon deeply craves to be the centre of attention, but also desires to help others. What it becomes is up to you!"
+    ],
+    "title": "Instability"
   }
 }

@@ -77,10 +77,19 @@ div {
   font-size: 0.75rem;
   transform-origin: center bottom;
   transition: transform 0.15s ease;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2.5%;
 }
 
 #header:hover {
   transform: scale(1.25);
+}
+
+#header > div {
+  flex-direction: row;
+  align-items: center;
 }
 
 .slide {
@@ -278,6 +287,7 @@ div {
   grid-row: 2;
   /* text-align: justify; */
   font-size: 1rem;
+  white-space: pre-wrap;
 }
 
 a {
