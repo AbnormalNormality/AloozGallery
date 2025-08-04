@@ -520,10 +520,35 @@
     "name": "Diglett",
     "types": ["fairy", "dark"],
     "abilities": [],
-    "picture": "assets/diglett.webp",
+    "picture": "assets/47diglett.webp",
     "entries": [
       "This troubled Diglett struggles with emotional regulation.\nIt produces a strange medicinal powder that it can use to help other Pokemon. In small doses, this medicine heals all sorts of illness and calms anxious Pokemon. In large doses, it creates intense anxiety and violent mood swings, as well as a whooping cough that strains its voice, making it hoarse. However, producing this powder in excess causes it to breath it in constantly since it piles up around the ground near them. It wears its mask to try to prevent itself from getting \"high on its own supply\".\nIt also frequently injures itself by banging its head violently up and down and patches itself up with bandages. Pokemon also listens to loud music to help soothe its mind. Pokemon deeply craves to be the centre of attention, but also desires to help others. What it becomes is up to you!"
     ],
     "title": "Instability"
+  },
+  "dugtrio": {
+    "id": "dugtrio",
+    "name": "Dugtrio",
+    "image": "assets/48dugtrio.webp",
+    "types": ["fairy", "ground"],
+    "abilities": ["toxicBoost", "flareBoost"],
+    "entries": [
+      "This form of Dugtrio, sometimes called \"Drugtrio\" has founds its true calling despite its troubled youth: helping other Pokemon. Drugtrio can absorb the illnesses of other creatures and heal them thanks to the strange medicinal powder and crystals it produces. However, Drugtrio suffers as a result: the two taller heads absorb illness and take it on themselves. They are constantly under the weather, but seem to be truly dedicated to their job and push through.",
+      "The smaller Pink head not only heals other Pokemon, but it is believed to be the origin of the strange virus known as Pokerus! It is theorized that after curing others of their status afflictions or disease, they pass on Pokerus like a sort of beneficial steroid or antibody! The Pink head thoroughly enjoys her job and keeps the other 2 heads as cheerful as they possibly can be given the circumstances.",
+      "Drugtrio has a face mask-like appendage to prevent other Pokemon from getting sick, and to prevent them from breathing in their own powder. While not nearly as dangerous as Diglett's powder, it can still cause uncomfortable symptoms if taken in excess. Their strange powder is constantly being produced and used up by them, and has a similar texture to chalk or other earthly organic materials."
+    ],
+    "title": "Remedy"
+  },
+  "alolanDugtrio": {
+    "id": "alolanDugtrio",
+    "name": "Alolan Dugtrio",
+    "image": "assets/49alolanDugtrio.webp",
+    "types": ["dark", "electric"],
+    "abilities": ["galvanise", "amplifier"],
+    "entries": [
+      "Unable to control their mood swings, Diglett harnessed its creative energy and desire for attention into stardom- becoming a musician! This Pokemon puts on \"concerts\" for other Pokemon making loud screaming sounds and electronic noises with their mouths. It is unclear if they still breath in some of the mystery powder from Diglett, but many theorize it does.",
+      "This Pokemon's music is quite controversial- it is very loud and aggressive sounding. This Pokemon can also be quite rude to others, showing only care for itself. They aggressively bang their heads in rhythm with their music. Some people are attracted to this personality and so this Pokemon is polarizing amongst the general public. Pokemon in the wild dread its presence as its deafening sounds only stop when it is knocked out."
+    ],
+    "title": "Rockstar"
   }
 }

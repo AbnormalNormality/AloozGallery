@@ -113,7 +113,7 @@ div {
   --gradient-split-distance: 0.5px;
   --gradient-angle-base: 112.5deg;
   --gradient-angle-reverse: calc(180deg - var(--gradient-angle-base));
-  --gradient-angle: var(---gradient-angle-base);
+  --gradient-angle: var(--gradient-angle-base);
 
   --type1-percent: calc(50% - var(--gradient-split-distance));
   --type2-percent: calc(50% + var(--gradient-split-distance));
@@ -139,11 +139,6 @@ div {
   border: 1px solid transparent;
   background-size: 110% 110%;
   background-position: center;
-}
-
-.slide:nth-child(4n + 2),
-.slide:nth-child(4n + 3) {
-  --gradient-angle: calc(var(--gradient-angle) * -1);
 }
 
 .slide > * {
