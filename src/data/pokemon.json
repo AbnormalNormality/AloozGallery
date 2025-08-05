@@ -497,7 +497,7 @@
     "name": "Krabby",
     "types": ["bug", "dark"],
     "abilities": ["strongJaw"],
-    "picture": "assets/krabby.webp",
+    "picture": "assets/43krabby.webp",
     "entries": [
       "When the sun sets, Remix Krabby awakens from its shallow burrows. It scuttles silently through the underbrush, seeking warm-blooded prey. It fears the sun and turns brittle if exposed too long. Its claws are laced with a numbing agent, ensuring its prey cannot scream while being fed upon."
     ],
@@ -508,7 +508,7 @@
     "name": "Kingler",
     "types": ["bug", "dark"],
     "abilities": ["strongJaw"],
-    "picture": "assets/kingler.webp",
+    "picture": "assets/44kingler.webp",
     "entries": [
       "Its hunting technique resembles an ambush predator from a horror film. It waits silently, then snaps its claws with a noise likened to the slam of a coffin. It drains the life force from its prey, leaving only an empty husk behind.",
       "Some believe the creature's true brain resides inside the claw, guided by the glowing eyes that never blink. Trainers report feeling watched even when the crab is asleep."
@@ -529,7 +529,7 @@
   "dugtrio": {
     "id": "dugtrio",
     "name": "Dugtrio",
-    "image": "assets/48dugtrio.webp",
+    "picture": "assets/48dugtrio.webp",
     "types": ["fairy", "ground"],
     "abilities": ["toxicBoost", "flareBoost"],
     "entries": [
@@ -542,7 +542,7 @@
   "alolanDugtrio": {
     "id": "alolanDugtrio",
     "name": "Alolan Dugtrio",
-    "image": "assets/49alolanDugtrio.webp",
+    "picture": "assets/49alolanDugtrio.webp",
     "types": ["dark", "electric"],
     "abilities": ["galvanise", "amplifier"],
     "entries": [
