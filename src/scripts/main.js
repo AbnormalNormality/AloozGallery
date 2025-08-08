@@ -6,8 +6,9 @@ function main() {
 }
 function displayGallery() {
     const order = getData("order");
+    const pokemon = getData("pokemon");
     for (const p of order) {
-        const data = getData("pokemon")[p];
+        const data = pokemon[p];
         const slide = document.createElement("div");
         slide.classList.add("slide");
         const nameWrapper = document.createElement("div");
