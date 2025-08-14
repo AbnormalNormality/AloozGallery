@@ -574,5 +574,39 @@
       "This Electrode, unlike Voltorb is constantly energized and awake. It can teleport instantaneously, allowing it to manuever with even more speed than Electrode normally could. Its mere presence is an anomaly, and poses great danger to our space time continuum. It causes dimensional rifts to Ultra Space wherever it teleports."
     ],
     "title": ""
+  },
+  "cleffa": {
+    "id": "cleffa",
+    "name": "Cleffa",
+    "types": ["ghost", "fairy"],
+    "abilities": [],
+    "picture": "assets/52Cleffa.webp",
+    "entries": [
+      "It emits a gentle light while sleeping, which people cherish as a comforting nightlight. Many say its presence wards off bad dreams and fills the night with soothing warmth and good rest."
+    ],
+    "title": "Starlight"
+  },
+  "clefairy": {
+    "id": "clefairy",
+    "name": "Clefairy",
+    "types": ["ghost", "fairy"],
+    "abilities": [],
+    "picture": "assets/53Clefairy.webp",
+    "entries": [
+      "It drifts into an unshakably deep slumber under the moonlight. Travelers whisper that its dreams sometimes connect to strange places… and that lingering too close might draw you into them. It is said a Clefairy who dreams too deeply may be visited by the shadow of its cosmic opposite... and never wake up the same."
+    ],
+    "title": "Lunar Dream"
+  },
+  "clefable": {
+    "id": "clefable",
+    "name": "Clefable",
+    "types": ["ghost", "dragon"],
+    "abilities": ["badDreams"],
+    "picture": "assets/54Clefable.webp",
+    "entries": [
+      "When bathed in the light of a full moon, some Clefairy fall into a dream so deep that their very form begins to unravel. A shadowy entity slips into their mind, warping their body into a writhing mass of mouths, eyes, and dripping fangs. Two tongues lash within its cavernous maws, ever searching for the dreams of others to devour.",
+      "What was once a serene, peaceful fairy now twists into a dragon of nightmares. Its wings are gone, replaced by jagged fins that slice through the dreamscape. Dozens of crimson eyes blink in unison, each reflecting a different victim's terror. No one knows if the Clefairy remains conscious inside this shell or if it is consumed entirely."
+    ],
+    "title": ""
   }
 }
